@@ -12,4 +12,5 @@ RUN apt-get update && \
     docker-php-ext-install pdo_mysql zip exif pcntl sockets && \
     docker-php-ext-configure gd --enable-gd --with-freetype --with-jpeg --with-webp && \
     docker-php-ext-install gd && \
-    a2enmod rewrite
+    a2enmod rewrite && \
+    composer global require hirak/prestissimo
